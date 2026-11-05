@@ -1,0 +1,4 @@
+{"number": 4433, "repo": "northgate/platform", "author": "wei", "title": "Identity v2: return user_id as a UUID string",
+ "head": "feature/identity-v2-uuid", "base": "release/q1-2027", "ticket": "PLAT-2230", "reviewers": ["tom", "security"],
+ "labels": ["breaking-change"], "files": ["identity/api/v2/users.py", "identity/api/v2/schema.py"], "deprecation_notice": false,
+ "body": "user_id is now a UUID string in the Identity API. Integer ids are removed in this release.", "created": "2026-11-04T17:30"}

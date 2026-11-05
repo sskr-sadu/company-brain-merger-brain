@@ -1,0 +1,6 @@
+metric,period,value,unit,definition_ref
+mrr,2026-07,1.86,USD millions,metrics-glossary#monthly-recurring-revenue-mrr
+mrr,2026-08,1.94,USD millions,metrics-glossary#monthly-recurring-revenue-mrr
+mrr,2026-09,2.05,USD millions,metrics-glossary#monthly-recurring-revenue-mrr
+revenue_churn,2026-09,1.2,percent,metrics-glossary#churn
+headcount,2026-09,181,people,

@@ -1,0 +1,339 @@
+{
+ "_note": "Task tracker export for Northgate (what Jira or Linear would provide). Dates are calendar days.",
+ "days": [
+  "2026-11-04",
+  "2026-11-05",
+  "2026-11-06",
+  "2026-11-09",
+  "2026-11-10",
+  "2026-11-11"
+ ],
+ "tasks": [
+  {
+   "id": "T1",
+   "who": "tom",
+   "title": "PLAT-2210: SAML login redirect flow",
+   "hours": 4,
+   "day": "2026-11-04",
+   "priority": 1,
+   "critical": "SSO contract with Sales (due 2027-03-31)"
+  },
+  {
+   "id": "T2",
+   "who": "tom",
+   "title": "Export CSV fix for Corvid Labs",
+   "hours": 3,
+   "day": "2026-11-04",
+   "priority": 3,
+   "off_plan": "Not in the team plan and not a Sev1"
+  },
+  {
+   "id": "T3",
+   "who": "tom",
+   "title": "Review PR #4420",
+   "hours": 1,
+   "day": "2026-11-04",
+   "priority": 2
+  },
+  {
+   "id": "T4",
+   "who": "tom",
+   "title": "PLAT-2210: assertion validation tests",
+   "hours": 4,
+   "day": "2026-11-05",
+   "priority": 1,
+   "critical": "SSO contract with Sales (due 2027-03-31)"
+  },
+  {
+   "id": "T6",
+   "who": "wei",
+   "title": "Reply to Billing on the Identity v2 UUID plan",
+   "hours": 1,
+   "day": "2026-11-04",
+   "priority": 1,
+   "feeds": "T9"
+  },
+  {
+   "id": "T5",
+   "who": "wei",
+   "title": "SCIM design doc (PLAT-2214, needs an owner)",
+   "hours": 3,
+   "day": "2026-11-05",
+   "priority": 1,
+   "critical": "SSO contract with Sales (due 2027-03-31)"
+  },
+  {
+   "id": "T7",
+   "who": "wei",
+   "title": "Q1 train planning",
+   "hours": 2,
+   "day": "2026-11-06",
+   "priority": 2
+  },
+  {
+   "id": "T8",
+   "who": "priya",
+   "title": "BILL-1180 retry alerting review",
+   "hours": 2,
+   "day": "2026-11-04",
+   "priority": 2
+  },
+  {
+   "id": "T9",
+   "who": "priya",
+   "title": "Estimate the UUID migration for Billing",
+   "hours": 3,
+   "day": "2026-11-05",
+   "priority": 1,
+   "needs": "T6"
+  },
+  {
+   "id": "T10",
+   "who": "marcus",
+   "title": "Decide SSO in Q1 or Q2 with Sales",
+   "hours": 1,
+   "day": "2026-11-05",
+   "priority": 1,
+   "critical": "SSO contract with Sales (due 2027-03-31)"
+  },
+  {
+   "id": "T11",
+   "who": "elena",
+   "title": "Acme Health renewal prep",
+   "hours": 2,
+   "day": "2026-11-06",
+   "priority": 1
+  },
+  {
+   "id": "T12",
+   "who": "dana",
+   "title": "Board pre-read: SSO risk",
+   "hours": 1,
+   "day": "2026-11-06",
+   "priority": 2
+  },
+  {
+   "id": "T13",
+   "who": "tom",
+   "title": "PLAT-2210: IdP error handling",
+   "hours": 4,
+   "day": "2026-11-09",
+   "priority": 1,
+   "critical": "SSO contract with Sales (due 2027-03-31)"
+  },
+  {
+   "id": "T14",
+   "who": "wei",
+   "title": "Identity v2 deprecation notice to consuming teams",
+   "hours": 1,
+   "day": "2026-11-09",
+   "priority": 1
+  },
+  {
+   "id": "T15",
+   "who": "priya",
+   "title": "Billing UUID migration: invoice tables",
+   "hours": 4,
+   "day": "2026-11-10",
+   "priority": 1
+  },
+  {
+   "id": "T16",
+   "who": "marcus",
+   "title": "Q1 release train scope review",
+   "hours": 1,
+   "day": "2026-11-10",
+   "priority": 2
+  },
+  {
+   "id": "T17",
+   "who": "elena",
+   "title": "Acme Health executive check-in",
+   "hours": 1,
+   "day": "2026-11-11",
+   "priority": 1
+  },
+  {
+   "id": "T18",
+   "who": "sam",
+   "title": "Corvid Labs contract redlines",
+   "hours": 2,
+   "day": "2026-11-09",
+   "priority": 2
+  },
+  {
+   "id": "T19",
+   "who": "grace",
+   "title": "Remote-work policy draft for leadership",
+   "hours": 3,
+   "day": "2026-11-11",
+   "priority": 2
+  }
+ ],
+ "milestones": [
+  {
+   "scope": "org/eng/platform",
+   "date": "2027-01-15",
+   "label": "SAML login (PLAT-2210)",
+   "progress": 35,
+   "state": "At risk",
+   "risk": true
+  },
+  {
+   "scope": "org/eng/platform",
+   "date": "2027-02-15",
+   "label": "SCIM provisioning (PLAT-2214)",
+   "progress": 0,
+   "state": "Not started",
+   "risk": true
+  },
+  {
+   "scope": "org/eng",
+   "date": "2027-02-17",
+   "label": "Q1 release train freeze",
+   "progress": 0,
+   "state": "Planned",
+   "risk": false
+  },
+  {
+   "scope": "org",
+   "date": "2027-03-31",
+   "label": "SSO live for the Acme Health renewal",
+   "progress": 20,
+   "state": "At risk",
+   "risk": true
+  },
+  {
+   "scope": "org/eng/billing",
+   "date": "2026-12-01",
+   "label": "Retry cap alerting live (BILL-1180)",
+   "progress": 80,
+   "state": "On track",
+   "risk": false
+  },
+  {
+   "scope": "org/sales",
+   "date": "2027-06-30",
+   "label": "Brightline renewal ($1.2M)",
+   "progress": 40,
+   "state": "On track",
+   "risk": false
+  },
+  {
+   "scope": "org",
+   "date": "2026-12-31",
+   "label": "ARR goal of $250M",
+   "progress": 65,
+   "state": "Behind",
+   "risk": true
+  }
+ ],
+ "completed": [
+  {
+   "who": "priya",
+   "date": "2026-11-04",
+   "time": "09:44",
+   "title": "Raised the Identity v2 risk to Billing's invoice job",
+   "ref": "team/billing/slack-billing-eng.md"
+  },
+  {
+   "who": "wei",
+   "date": "2026-11-04",
+   "time": "10:05",
+   "title": "Acknowledged Billing's UUID concern with Engineering leads",
+   "ref": "engineering/slack-eng-leads.md"
+  },
+  {
+   "who": "elena",
+   "date": "2026-11-04",
+   "time": "10:05",
+   "title": "Reviewed Acme Health renewal risk",
+   "ref": "sales/email-acme-handoff.md"
+  },
+  {
+   "who": "tom",
+   "date": "2026-11-04",
+   "time": "11:20",
+   "title": "Reviewed PR #4419: session timeout config",
+   "ref": "northgate/platform PR #4419"
+  },
+  {
+   "who": "wei",
+   "date": "2026-11-02",
+   "title": "Posted the Identity v2 decision: user IDs become UUIDs in Q1",
+   "ref": "team/platform/identity-v2-uuid.md"
+  },
+  {
+   "who": "dana",
+   "date": "2026-11-02",
+   "title": "Restated Q4 company goals to leadership",
+   "ref": "org/_scope.md"
+  },
+  {
+   "who": "priya",
+   "date": "2026-11-03",
+   "title": "Documented Billing's dependency on integer user IDs",
+   "ref": "team/billing/identity-dependency.md"
+  },
+  {
+   "who": "elena",
+   "date": "2026-11-03",
+   "title": "Confirmed with Acme that SSO must be live before Mar 31",
+   "ref": "sales/email-sso-timing.md"
+  },
+  {
+   "who": "tom",
+   "date": "2026-11-03",
+   "title": "SAML redirect flow: IdP metadata parsing (part of PLAT-2210)",
+   "ref": "tom's pushed commits"
+  },
+  {
+   "who": "tom",
+   "date": "2026-10-27",
+   "title": "SAML assertion parser hardened after Security review (PR #4412)",
+   "ref": "engineering/git-log.md"
+  },
+  {
+   "who": "wei",
+   "date": "2026-10-28",
+   "title": "Identity v2 design reviewed with Engineering leads",
+   "ref": "engineering/architecture.md"
+  },
+  {
+   "who": "priya",
+   "date": "2026-10-29",
+   "title": "Nightly invoice batch ran clean all week",
+   "ref": "billing ops"
+  },
+  {
+   "who": "priya",
+   "date": "2026-10-30",
+   "title": "BILL-1180 retry alerting code complete, sent to review",
+   "ref": "engineering/tickets.md"
+  },
+  {
+   "who": "marcus",
+   "date": "2026-10-30",
+   "title": "Published the Q1 release train calendar",
+   "ref": "engineering/chat-release-train.md"
+  },
+  {
+   "who": "sam",
+   "date": "2026-10-29",
+   "title": "Moved Corvid Labs to negotiation ($0.4M)",
+   "ref": "sales/crm-export.md"
+  },
+  {
+   "who": "elena",
+   "date": "2026-10-30",
+   "title": "Handed the Acme Health SSO requirement to Engineering",
+   "ref": "sales/email-acme-handoff.md"
+  },
+  {
+   "who": "grace",
+   "date": "2026-10-30",
+   "title": "Closed the remote-work input survey",
+   "ref": "people/meeting-notes-2026-10-02.md"
+  }
+ ]
+}

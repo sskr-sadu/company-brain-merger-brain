@@ -1,0 +1,1156 @@
+{
+ "deal": {
+  "name": "Northgate acquires Pulsepoint",
+  "signed": "2026-11-20",
+  "close": "2027-01-04",
+  "fusion": "2028-01-03",
+  "lead": "elena",
+  "sponsor": "dana",
+  "scenario": "Co-create: keep what works on each side, decide clashes together"
+ },
+ "phases": [
+  {
+   "id": "pre",
+   "name": "Before close",
+   "theme": "Prepare",
+   "start": "2026-11-20",
+   "end": "2027-01-03"
+  },
+  {
+   "id": "q1",
+   "name": "Q1",
+   "theme": "Stabilize",
+   "start": "2027-01-04",
+   "end": "2027-03-31"
+  },
+  {
+   "id": "q2",
+   "name": "Q2",
+   "theme": "Align",
+   "start": "2027-04-01",
+   "end": "2027-06-30"
+  },
+  {
+   "id": "q3",
+   "name": "Q3",
+   "theme": "Integrate",
+   "start": "2027-07-01",
+   "end": "2027-09-30"
+  },
+  {
+   "id": "q4",
+   "name": "Q4",
+   "theme": "Fuse",
+   "start": "2027-10-01",
+   "end": "2028-01-03"
+  }
+ ],
+ "people": {
+  "dana": {
+   "name": "Dana Whitfield",
+   "co": "ng",
+   "unit": "ng:org",
+   "level": "ceo"
+  },
+  "marcus": {
+   "name": "Marcus Lee",
+   "co": "ng",
+   "unit": "ng:org/eng",
+   "level": "head"
+  },
+  "elena": {
+   "name": "Elena Ruiz",
+   "co": "ng",
+   "unit": "ng:org/sales",
+   "level": "head"
+  },
+  "grace": {
+   "name": "Grace Kim",
+   "co": "ng",
+   "unit": "ng:org/people",
+   "level": "head"
+  },
+  "wei": {
+   "name": "Wei Zhang",
+   "co": "ng",
+   "unit": "ng:org/eng/platform",
+   "level": "lead"
+  },
+  "priya": {
+   "name": "Priya Raman",
+   "co": "ng",
+   "unit": "ng:org/eng/billing",
+   "level": "lead"
+  },
+  "sam": {
+   "name": "Sam Ortega",
+   "co": "ng",
+   "unit": "ng:org/sales/enterprise",
+   "level": "lead"
+  },
+  "tom": {
+   "name": "Tom Okafor",
+   "co": "ng",
+   "unit": "ng:org/eng/platform",
+   "level": "member"
+  },
+  "jordan": {
+   "name": "Jordan Blake",
+   "co": "pp",
+   "unit": "pp:org",
+   "level": "ceo"
+  },
+  "aisha": {
+   "name": "Aisha Patel",
+   "co": "pp",
+   "unit": "pp:org/eng",
+   "level": "head"
+  },
+  "nina": {
+   "name": "Nina Volkova",
+   "co": "pp",
+   "unit": "pp:org/sales",
+   "level": "head"
+  },
+  "raj": {
+   "name": "Raj Iyer",
+   "co": "pp",
+   "unit": "pp:org/people",
+   "level": "head"
+  },
+  "sofia": {
+   "name": "Sofia Reyes",
+   "co": "pp",
+   "unit": "pp:org/eng/core",
+   "level": "lead"
+  },
+  "leo": {
+   "name": "Leo Martins",
+   "co": "pp",
+   "unit": "pp:org/eng/billing",
+   "level": "lead"
+  },
+  "kenji": {
+   "name": "Kenji Sato",
+   "co": "pp",
+   "unit": "pp:org/eng/integrations",
+   "level": "lead"
+  },
+  "maya": {
+   "name": "Maya Chen",
+   "co": "pp",
+   "unit": "pp:org/sales/midmarket",
+   "level": "lead"
+  },
+  "ben": {
+   "name": "Ben Ortiz",
+   "co": "pp",
+   "unit": "pp:org/eng/core",
+   "level": "member"
+  }
+ },
+ "units": {
+  "ng:org": {
+   "name": "Northgate",
+   "kind": "org",
+   "owner": "dana",
+   "dir": "northgate/org"
+  },
+  "ng:org/eng": {
+   "name": "Engineering",
+   "kind": "dept",
+   "owner": "marcus",
+   "dir": "northgate/org/dept/engineering"
+  },
+  "ng:org/eng/platform": {
+   "name": "Platform",
+   "kind": "team",
+   "owner": "wei",
+   "dir": "northgate/org/dept/engineering/team/platform"
+  },
+  "ng:org/eng/billing": {
+   "name": "Billing",
+   "kind": "team",
+   "owner": "priya",
+   "dir": "northgate/org/dept/engineering/team/billing"
+  },
+  "ng:org/sales": {
+   "name": "Sales",
+   "kind": "dept",
+   "owner": "elena",
+   "dir": "northgate/org/dept/sales"
+  },
+  "ng:org/sales/enterprise": {
+   "name": "Enterprise",
+   "kind": "team",
+   "owner": "sam",
+   "dir": "northgate/org/dept/sales"
+  },
+  "ng:org/people": {
+   "name": "People",
+   "kind": "dept",
+   "owner": "grace",
+   "dir": "northgate/org/dept/people"
+  },
+  "pp:org": {
+   "name": "Pulsepoint",
+   "kind": "org",
+   "owner": "jordan",
+   "dir": "pulsepoint/org"
+  },
+  "pp:org/eng": {
+   "name": "Engineering",
+   "kind": "dept",
+   "owner": "aisha",
+   "dir": "pulsepoint/org/dept/engineering"
+  },
+  "pp:org/eng/core": {
+   "name": "Core",
+   "kind": "team",
+   "owner": "sofia",
+   "dir": "pulsepoint/org/dept/engineering/team/core"
+  },
+  "pp:org/eng/billing": {
+   "name": "Billing",
+   "kind": "team",
+   "owner": "leo",
+   "dir": "pulsepoint/org/dept/engineering/team/billing"
+  },
+  "pp:org/eng/integrations": {
+   "name": "Integrations",
+   "kind": "team",
+   "owner": "kenji",
+   "dir": "pulsepoint/org/dept/engineering/team/integrations"
+  },
+  "pp:org/sales": {
+   "name": "Sales",
+   "kind": "dept",
+   "owner": "nina",
+   "dir": "pulsepoint/org/dept/sales"
+  },
+  "pp:org/sales/midmarket": {
+   "name": "Mid-market",
+   "kind": "team",
+   "owner": "maya",
+   "dir": "pulsepoint/org/dept/sales/team/midmarket"
+  },
+  "pp:org/people": {
+   "name": "People",
+   "kind": "dept",
+   "owner": "raj",
+   "dir": "pulsepoint/org/dept/people"
+  }
+ },
+ "unit_map": {
+  "ng:org": "pp:org",
+  "ng:org/eng": "pp:org/eng",
+  "ng:org/sales": "pp:org/sales",
+  "ng:org/people": "pp:org/people",
+  "ng:org/eng/platform": "pp:org/eng/core",
+  "ng:org/eng/billing": "pp:org/eng/billing",
+  "ng:org/sales/enterprise": "pp:org/sales/midmarket"
+ },
+ "unpaired": {
+  "pp:org/eng/integrations": {
+   "mirror": "ng:org/eng/platform",
+   "why": "Closest Northgate team by what it owns (APIs to customer systems); stays a separate team"
+  }
+ },
+ "pairs": [
+  {
+   "id": "P1",
+   "ng": "ng:org/eng/platform",
+   "pp": "pp:org/eng/core",
+   "mode": "Align, then merge identity",
+   "fused": {
+    "id": "fz:org/eng/identity-core",
+    "name": "Identity & Core Platform",
+    "lead": "wei",
+    "deputy": "sofia",
+    "quarter": "q3"
+   },
+   "why": "Both own the identity service. Northgate uses integer user ids moving to UUIDs (Identity v2); Pulsepoint is already on UUIDs.",
+   "contract": [
+    "Platform publishes Identity v2 UUID format and dates to Core by Feb 15",
+    "Core shares its UUID migration runbook with Platform",
+    "No breaking change to either identity API without a 1-train notice to the other team"
+   ],
+   "rituals": [
+    "#pair-identity shared channel from Day 1",
+    "Weekly 30-min sync, Thursdays, alternating host",
+    "Buddy pairs: Tom \u2194 Ben, Wei \u2194 Sofia",
+    "Joint architecture review once a month from Q2",
+    "Joint on-call shadowing from Q2, shared rotation from Q3"
+   ],
+   "bridge": "The owner decides, but posts the decision in #pair-identity 48 hours before acting",
+   "quarters": {
+    "q1": {
+     "goal": "Understand each other's identity model",
+     "tasks": [
+      [
+       "Exchange team cards and the identity data model",
+       "wei",
+       "sofia",
+       "2027-01-22"
+      ],
+      [
+       "Compare UUID formats and write the gap list",
+       "tom",
+       "ben",
+       "2027-02-26"
+      ],
+      [
+       "Sign the pair contract",
+       "wei",
+       "sofia",
+       "2027-02-05"
+      ]
+     ],
+     "measure": "Gap list agreed; contract signed"
+    },
+    "q2": {
+     "goal": "One UUID format for both products",
+     "tasks": [
+      [
+       "Adopt Pulsepoint's UUID format in Identity v2",
+       "wei",
+       "sofia",
+       "2027-05-14"
+      ],
+      [
+       "Shadow each other's on-call for 2 weeks",
+       "tom",
+       "ben",
+       "2027-06-11"
+      ]
+     ],
+     "measure": "Both identity services issue the same UUID format"
+    },
+    "q3": {
+     "goal": "One identity service and one team",
+     "tasks": [
+      [
+       "Merge identity services behind one API",
+       "wei",
+       "sofia",
+       "2027-09-10"
+      ],
+      [
+       "Form Identity & Core Platform team; Wei leads, Sofia deputy",
+       "marcus",
+       "aisha",
+       "2027-07-15"
+      ]
+     ],
+     "measure": "One identity service in production; one backlog"
+    },
+    "q4": {
+     "goal": "Run as one team",
+     "tasks": [
+      [
+       "Retire the old Pulsepoint identity endpoints",
+       "sofia",
+       "wei",
+       "2027-11-30"
+      ]
+     ],
+     "measure": "No traffic on retired endpoints"
+    }
+   }
+  },
+  {
+   "id": "P2",
+   "ng": "ng:org/eng/billing",
+   "pp": "pp:org/eng/billing",
+   "mode": "Remove key-person risk, then merge",
+   "fused": {
+    "id": "fz:org/eng/billing",
+    "name": "Billing",
+    "lead": "priya",
+    "deputy": "leo",
+    "quarter": "q3"
+   },
+   "why": "Pulsepoint billing is built and run by one engineer (Leo Martins). Northgate invoices from integer user ids; Pulsepoint maps Stripe ids to UUIDs.",
+   "contract": [
+    "Leo pairs with a Northgate billing engineer on every billing deploy in Q1",
+    "Billing changes on either side need a reviewer from the other team from Q2",
+    "Invoice formats stay unchanged for customers until Q4"
+   ],
+   "rituals": [
+    "#pair-billing shared channel",
+    "Twice-weekly 20-min sync in Q1 (knowledge transfer), weekly after",
+    "Pair-programming days every other Friday",
+    "Shared runbook in the pair space"
+   ],
+   "bridge": "Two people can deploy billing on either side; nobody deploys billing alone",
+   "quarters": {
+    "q1": {
+     "goal": "A second engineer can run Pulsepoint billing",
+     "tasks": [
+      [
+       "Second engineer trained on Pulsepoint billing (T-02)",
+       "priya",
+       "leo",
+       "2027-03-31"
+      ],
+      [
+       "Write the Pulsepoint billing runbook",
+       "leo",
+       "priya",
+       "2027-02-28"
+      ]
+     ],
+     "measure": "A Northgate engineer has deployed Pulsepoint billing twice, unassisted"
+    },
+    "q2": {
+     "goal": "Shared review and one customer id map",
+     "tasks": [
+      [
+       "Map Stripe ids and integer ids to UUIDs in one table",
+       "priya",
+       "leo",
+       "2027-06-15"
+      ]
+     ],
+     "measure": "Every customer resolves to one UUID"
+    },
+    "q3": {
+     "goal": "One billing team",
+     "tasks": [
+      [
+       "Merge billing teams; Priya leads, Leo deputy",
+       "marcus",
+       "aisha",
+       "2027-07-15"
+      ],
+      [
+       "One invoice pipeline for new customers",
+       "priya",
+       "leo",
+       "2027-09-24"
+      ]
+     ],
+     "measure": "New customers invoiced by one pipeline"
+    },
+    "q4": {
+     "goal": "Move existing customers",
+     "tasks": [
+      [
+       "Migrate Pulsepoint customers to the shared pipeline",
+       "leo",
+       "priya",
+       "2027-12-10"
+      ]
+     ],
+     "measure": "Zero invoice errors in the migration month"
+    }
+   }
+  },
+  {
+   "id": "P3",
+   "ng": "ng:org/eng",
+   "pp": "pp:org/eng",
+   "mode": "One release process, decided together",
+   "fused": {
+    "id": "fz:org/eng",
+    "name": "Engineering",
+    "lead": "marcus",
+    "deputy": "aisha",
+    "quarter": "q4"
+   },
+   "why": "Northgate ships on a quarterly release train; Pulsepoint deploys continuously. Both require a security review (same rule, different words).",
+   "contract": [
+    "Healthcare customers get Northgate's security review and audit log on every Pulsepoint deploy from Q1",
+    "The release process is decided in the joint decision charter by Q3"
+   ],
+   "rituals": [
+    "Monthly engineering leads forum, both companies",
+    "Shared incident reviews from Q1",
+    "Joint decision charter working group (T-08)"
+   ],
+   "bridge": "Decisions are made by a named owner after the affected teams have had 48 hours to comment",
+   "quarters": {
+    "q1": {
+     "goal": "Safety baseline without slowing Pulsepoint",
+     "tasks": [
+      [
+       "Pulsepoint Engineering adopts the quarterly release train and security review for all customers (T-07)",
+       "marcus",
+       "aisha",
+       "2027-03-31"
+      ]
+     ],
+     "measure": "Security review on 100% of healthcare deploys"
+    },
+    "q2": {
+     "goal": "Compare release outcomes with data",
+     "tasks": [
+      [
+       "Measure lead time and incidents on both processes",
+       "marcus",
+       "aisha",
+       "2027-06-30"
+      ]
+     ],
+     "measure": "Shared dashboard of release metrics"
+    },
+    "q3": {
+     "goal": "One release process",
+     "tasks": [
+      [
+       "Co-create the decision charter and release policy (T-08)",
+       "marcus",
+       "aisha",
+       "2027-09-30"
+      ]
+     ],
+     "measure": "Charter adopted by both leadership teams"
+    },
+    "q4": {
+     "goal": "One engineering department",
+     "tasks": [
+      [
+       "One engineering org chart; Marcus VP, Aisha SVP Product Engineering",
+       "dana",
+       "jordan",
+       "2027-11-15"
+      ]
+     ],
+     "measure": "One org chart published"
+    }
+   }
+  },
+  {
+   "id": "P4",
+   "ng": "ng:org/sales/enterprise",
+   "pp": "pp:org/sales/midmarket",
+   "mode": "Split by segment, share accounts",
+   "fused": {
+    "id": "fz:org/sales",
+    "name": "Sales (Enterprise + Mid-market)",
+    "lead": "elena",
+    "deputy": "nina",
+    "quarter": "q4"
+   },
+   "why": "Different segments (enterprise vs mid-market) but two shared customers (Acme Health, Corvid Labs) and two CRMs (Salesforce vs HubSpot).",
+   "contract": [
+    "One named owner per shared account; the other team never contacts it without the owner",
+    "Deals that cross segments are referred, not competed for"
+   ],
+   "rituals": [
+    "#pair-accounts shared channel",
+    "Weekly shared-account review in Q1",
+    "Monthly pipeline review from Q2"
+   ],
+   "bridge": "Account owner decides; the other team is told the same day",
+   "quarters": {
+    "q1": {
+     "goal": "Keep every shared customer",
+     "tasks": [
+      [
+       "Change-of-control outreach: retain Acme Health (T-01)",
+       "elena",
+       "nina",
+       "2027-02-15"
+      ],
+      [
+       "Joint account plan for Acme Health and Corvid Labs",
+       "sam",
+       "maya",
+       "2027-01-29"
+      ]
+     ],
+     "measure": "Acme Health waives the change-of-control clause"
+    },
+    "q2": {
+     "goal": "One CRM",
+     "tasks": [
+      [
+       "Pulsepoint Sales moves to Salesforce (T-05)",
+       "elena",
+       "nina",
+       "2027-06-30"
+      ]
+     ],
+     "measure": "All Pulsepoint deals in Salesforce"
+    },
+    "q3": {
+     "goal": "One price book",
+     "tasks": [
+      [
+       "Combined price book by segment (restricted)",
+       "elena",
+       "nina",
+       "2027-09-15"
+      ]
+     ],
+     "measure": "Price book approved by the CFO"
+    },
+    "q4": {
+     "goal": "One sales department, two segments",
+     "tasks": [
+      [
+       "Combined sales org; Elena VP, Nina leads Mid-market",
+       "dana",
+       "jordan",
+       "2027-11-15"
+      ]
+     ],
+     "measure": "One org chart, segment teams intact"
+    }
+   }
+  },
+  {
+   "id": "P5",
+   "ng": "ng:org/people",
+   "pp": "pp:org/people",
+   "mode": "Merge policies, then teams",
+   "fused": {
+    "id": "fz:org/people",
+    "name": "People",
+    "lead": "grace",
+    "deputy": "raj",
+    "quarter": "q3"
+   },
+   "why": "Spending approval, remote work and time-off policies clash.",
+   "contract": [
+    "Each company's policies apply to its own people until a joint decision",
+    "Any policy change is announced to both companies on the same day"
+   ],
+   "rituals": [
+    "Weekly People leads sync",
+    "Joint employee pulse survey each quarter"
+   ],
+   "bridge": "Policy decisions take input from both companies before a named owner decides",
+   "quarters": {
+    "q1": {
+     "goal": "One spending-approval policy",
+     "tasks": [
+      [
+       "One spending-approval policy (T-03)",
+       "grace",
+       "raj",
+       "2027-03-31"
+      ]
+     ],
+     "measure": "Policy published to both companies"
+    },
+    "q2": {
+     "goal": "Remote work and time off",
+     "tasks": [
+      [
+       "Remote-work policy for the combined company (T-06)",
+       "grace",
+       "raj",
+       "2027-06-30"
+      ]
+     ],
+     "measure": "Policy published; pulse survey score holds"
+    },
+    "q3": {
+     "goal": "One People team",
+     "tasks": [
+      [
+       "Merge People teams; Grace leads, Raj deputy",
+       "dana",
+       "jordan",
+       "2027-07-15"
+      ]
+     ],
+     "measure": "One HR system of record"
+    },
+    "q4": {
+     "goal": "One handbook",
+     "tasks": [
+      [
+       "Publish the combined handbook",
+       "grace",
+       "raj",
+       "2027-12-01"
+      ]
+     ],
+     "measure": "Handbook acknowledged by 95% of staff"
+    }
+   }
+  }
+ ],
+ "plan_v1": [
+  [
+   "T-01",
+   "Change-of-control: retain Acme Health",
+   "q1",
+   [
+    "elena",
+    "nina"
+   ],
+   "2027-02-15",
+   "P4"
+  ],
+  [
+   "T-02",
+   "Key-person risk: second engineer trained on Pulsepoint billing",
+   "q1",
+   [
+    "priya",
+    "leo"
+   ],
+   "2027-03-31",
+   "P2"
+  ],
+  [
+   "T-03",
+   "One spending-approval policy",
+   "q1",
+   [
+    "grace",
+    "raj"
+   ],
+   "2027-03-31",
+   "P5"
+  ],
+  [
+   "T-07",
+   "Pulsepoint Engineering adopts the quarterly release train and security review for all customers",
+   "q1",
+   [
+    "marcus",
+    "aisha"
+   ],
+   "2027-03-31",
+   "P3"
+  ],
+  [
+   "T-04",
+   "One churn definition for board reporting",
+   "q2",
+   [
+    "dana",
+    "jordan"
+   ],
+   "2027-06-30",
+   null
+  ],
+  [
+   "T-05",
+   "CRM: Pulsepoint Sales moves to Salesforce",
+   "q2",
+   [
+    "elena",
+    "nina"
+   ],
+   "2027-06-30",
+   "P4"
+  ],
+  [
+   "T-06",
+   "Remote-work policy for the combined company",
+   "q2",
+   [
+    "grace",
+    "raj"
+   ],
+   "2027-06-30",
+   "P5"
+  ],
+  [
+   "T-08",
+   "Decision style: co-created decision charter",
+   "q3",
+   [
+    "marcus",
+    "aisha"
+   ],
+   "2027-09-30",
+   "P3"
+  ]
+ ],
+ "plan_options": {
+  "pre": [
+   [
+    "Absorb",
+    "Pulsepoint adopts Northgate's processes and tools within two quarters.",
+    "Fast and simple; high risk of losing Pulsepoint's speed and key people."
+   ],
+   [
+    "Co-create",
+    "Keep what works on each side; decide each clash together on a schedule; fuse at year end.",
+    "Keeps people and customers; needs disciplined tracking (the brain does this).",
+    true
+   ],
+   [
+    "Keep separate",
+    "Run Pulsepoint as a standalone unit with only finance and security joined.",
+    "Lowest risk; few synergies."
+   ]
+  ],
+  "q1": [
+   [
+    "Stabilize with light pairs",
+    "Run as two companies; pair teams to learn each other; only legal, security and shared-customer work is joint.",
+    "Protects value; integration starts slowly.",
+    true
+   ],
+   [
+    "Early merge of engineering",
+    "Merge engineering teams in Q1.",
+    "Faster synergies; high attrition risk."
+   ]
+  ],
+  "q2": [
+   [
+    "Align definitions and tools",
+    "One CRM, one churn metric, one set of policies; teams still separate.",
+    "Clear numbers for the board; tool migration load on Sales.",
+    true
+   ],
+   [
+    "Defer tools to Q3",
+    "Align only metrics and policies.",
+    "Less disruption; two CRMs for longer."
+   ]
+  ],
+  "q3": [
+   [
+    "Merge paired teams in order",
+    "Billing, then Identity/Core, then People; one charter for decisions.",
+    "Real integration with checks per unit.",
+    true
+   ],
+   [
+    "Merge all at once",
+    "Every pair merges on Jul 1.",
+    "One change moment; no time to learn from the first merge."
+   ]
+  ],
+  "q4": [
+   [
+    "Fuse unit by unit, final cut Dec 31",
+    "Remaining units fused; one brain with origin tags.",
+    "Traceable; takes the whole quarter.",
+    true
+   ]
+  ]
+ },
+ "gates": {
+  "q1": [
+   [
+    "No key customer lost",
+    "T-01"
+   ],
+   [
+    "Second engineer on Pulsepoint billing",
+    "T-02"
+   ],
+   [
+    "One spending-approval policy",
+    "T-03"
+   ],
+   [
+    "Security review on healthcare deploys",
+    "T-07"
+   ],
+   [
+    "Every team pair has a signed contract",
+    "pairs"
+   ]
+  ],
+  "q2": [
+   [
+    "One churn definition",
+    "T-04"
+   ],
+   [
+    "One CRM",
+    "T-05"
+   ],
+   [
+    "Remote-work policy",
+    "T-06"
+   ]
+  ],
+  "q3": [
+   [
+    "Decision charter adopted",
+    "T-08"
+   ],
+   [
+    "Merging pairs fused",
+    "fusion:q3"
+   ]
+  ],
+  "q4": [
+   [
+    "All units fused",
+    "fusion:q4"
+   ],
+   [
+    "Every item traceable to its origin",
+    "lineage"
+   ]
+  ]
+ },
+ "task_status": {
+  "T-01": "done",
+  "T-02": "on track",
+  "T-03": "done",
+  "T-07": "open",
+  "T-04": "not started",
+  "T-05": "not started",
+  "T-06": "not started",
+  "T-08": "not started"
+ },
+ "clashes": [
+  {
+   "id": "C1",
+   "subject": "Decision style",
+   "label": "soft",
+   "layer": "Culture",
+   "ng": [
+    "northgate/org/_scope.md",
+    "We decide together"
+   ],
+   "pp": [
+    "pulsepoint/org/_scope.md",
+    "The owner decides"
+   ],
+   "task": "T-08",
+   "pair": "P3"
+  },
+  {
+   "id": "C2",
+   "subject": "Release process",
+   "label": "soft",
+   "layer": "Engineering",
+   "ng": [
+    "northgate/org/dept/engineering/_scope.md",
+    "quarterly release train"
+   ],
+   "pp": [
+    "pulsepoint/org/dept/engineering/_scope.md",
+    "Continuous deployment"
+   ],
+   "task": "T-07",
+   "pair": "P3"
+  },
+  {
+   "id": "C3",
+   "subject": "CRM",
+   "label": "soft",
+   "layer": "Customers / CRM",
+   "ng": [
+    "northgate/org/dept/sales/_scope.md",
+    "system of record is Salesforce"
+   ],
+   "pp": [
+    "pulsepoint/org/dept/sales/_scope.md",
+    "CRM is HubSpot"
+   ],
+   "task": "T-05",
+   "pair": "P4"
+  },
+  {
+   "id": "C4",
+   "subject": "Churn definition",
+   "label": "hard",
+   "layer": "Metrics",
+   "ng": [
+    "northgate/org/metrics-glossary.md",
+    "Logo churn, measured yearly"
+   ],
+   "pp": [
+    "pulsepoint/org/metrics-glossary.md",
+    "Revenue churn, measured monthly"
+   ],
+   "task": "T-04",
+   "pair": null
+  },
+  {
+   "id": "C5",
+   "subject": "Spending approval",
+   "label": "hard",
+   "layer": "Policies",
+   "ng": [
+    "northgate/org/employee-handbook.md",
+    "over \\$25,000 needs approval"
+   ],
+   "pp": [
+    "pulsepoint/org/team-handbook.md",
+    "up to \\$10,000"
+   ],
+   "task": "T-03",
+   "pair": "P5"
+  },
+  {
+   "id": "C6",
+   "subject": "Remote work",
+   "label": "hard",
+   "layer": "Policies",
+   "ng": [
+    "northgate/org/employee-handbook.md",
+    "at least 3 days a week"
+   ],
+   "pp": [
+    "pulsepoint/org/team-handbook.md",
+    "fully remote"
+   ],
+   "task": "T-06",
+   "pair": "P5"
+  },
+  {
+   "id": "C7",
+   "subject": "Time off",
+   "label": "hard",
+   "layer": "Policies",
+   "ng": [
+    "northgate/org/employee-handbook.md",
+    "1.67 days per month"
+   ],
+   "pp": [
+    "pulsepoint/org/team-handbook.md",
+    "Unlimited paid time off"
+   ],
+   "task": null,
+   "pair": "P5"
+  },
+  {
+   "id": "C8",
+   "subject": "Key-person risk",
+   "label": "red flag",
+   "layer": "Engineering",
+   "ng": null,
+   "pp": [
+    "pulsepoint/org/org-chart.md",
+    "built and maintained by one engineer"
+   ],
+   "task": "T-02",
+   "pair": "P2"
+  },
+  {
+   "id": "C9",
+   "subject": "Change of control",
+   "label": "red flag",
+   "layer": "Customers / CRM",
+   "ng": null,
+   "pp": [
+    "pulsepoint/org/dept/sales/crm-export.md",
+    "Change-of-control clause"
+   ],
+   "task": "T-01",
+   "pair": "P4"
+  },
+  {
+   "id": "C10",
+   "subject": "Pricing",
+   "label": "hard",
+   "layer": "Strategy",
+   "restricted": true,
+   "ng": [
+    "northgate/org/dept/sales/pricing.md",
+    null
+   ],
+   "pp": [
+    "pulsepoint/org/dept/sales/pricing.md",
+    null
+   ],
+   "task": null,
+   "pair": "P4"
+  },
+  {
+   "id": "C11",
+   "subject": "User id format",
+   "label": "hard",
+   "layer": "Engineering",
+   "ng": [
+    "northgate/org/dept/engineering/team/billing/identity-dependency.md",
+    "as an integer"
+   ],
+   "pp": [
+    "pulsepoint/org/dept/engineering/team/core/_scope.md",
+    "UUID strings"
+   ],
+   "task": null,
+   "pair": "P1"
+  }
+ ],
+ "decoys": [
+  [
+   "Security review",
+   "northgate/org/employee-handbook.md",
+   "security review before it reaches",
+   "pulsepoint/org/team-handbook.md",
+   "passing a security review"
+  ],
+  [
+   "Expense receipts",
+   "northgate/org/employee-handbook.md",
+   "every expense over \\$25",
+   "pulsepoint/org/team-handbook.md",
+   "anything over \\$25"
+  ],
+  [
+   "On-call",
+   "northgate/org/dept/engineering/_scope.md",
+   "acknowledged within 15 minutes",
+   "pulsepoint/org/dept/engineering/_scope.md",
+   "answered within 15 minutes"
+  ],
+  [
+   "Laptops and sign-in",
+   "northgate/org/employee-handbook.md",
+   "full-disk encryption",
+   "pulsepoint/org/team-handbook.md",
+   "Laptops are encrypted"
+  ],
+  [
+   "Parental leave",
+   "northgate/org/employee-handbook.md",
+   "Parental leave is 16 weeks",
+   "pulsepoint/org/team-handbook.md",
+   "Parental leave: 16 weeks"
+  ]
+ ],
+ "entities": [
+  {
+   "canonical": "Acme Health",
+   "ng": "Acme Health",
+   "pp": "Acme Health Inc.",
+   "domain": "acmehealth.com",
+   "match": "domain",
+   "risk": "Change-of-control clause (T-01)"
+  },
+  {
+   "canonical": "Corvid Labs",
+   "ng": "Corvid Labs",
+   "pp": "Corvid Labs",
+   "domain": "corvidlabs.io",
+   "match": "domain",
+   "risk": null
+  }
+ ],
+ "merger_rules": [
+  {
+   "task": "T-07",
+   "pattern": "keeping continuous deployment for all customers|will not join the .* release train",
+   "options": [
+    [
+     "Release train for healthcare customers only",
+     "Pulsepoint keeps continuous deployment for mid-market; deploys that reach healthcare customers (Acme Health) go through Northgate's security review and audit log.",
+     true,
+     "T-07 becomes: security review and audit log on every deploy that reaches healthcare customers (Q1). The single release process moves to the decision charter (T-08, Q3)."
+    ],
+    [
+     "Keep continuous deployment with added gates",
+     "Continuous deployment for all customers, with an audit log and a security sign-off gate on sensitive areas.",
+     false,
+     "T-07 becomes: audit log and security sign-off gate on sensitive-area deploys for all customers (Q1)."
+    ],
+    [
+     "Move T-07 to Q2",
+     "Keep the original goal (release train for all) but give Pulsepoint a quarter to prepare.",
+     false,
+     "T-07 moves to Q2 unchanged; the Q1 gate drops the release-train criterion."
+    ]
+   ]
+  }
+ ]
+}

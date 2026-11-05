@@ -1,0 +1,4 @@
+{"number": 4431, "repo": "northgate/platform", "author": "tom", "title": "Export CSV fix for Corvid Labs",
+ "head": "hotfix/export-csv", "base": "production", "ticket": null, "reviewers": [], "labels": [],
+ "files": ["services/export/csv_writer.py"], "deprecation_notice": false,
+ "body": "Quick fix so the Corvid Labs prospect sees it on Friday. Deploying straight to production.", "created": "2026-11-04T16:20"}

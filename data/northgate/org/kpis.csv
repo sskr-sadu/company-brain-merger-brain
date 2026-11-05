@@ -1,0 +1,6 @@
+metric,period,value,unit,definition_ref
+arr,2026-Q1,214,USD millions,metrics-glossary#annual-recurring-revenue-arr
+arr,2026-Q2,219,USD millions,metrics-glossary#annual-recurring-revenue-arr
+arr,2026-Q3,228,USD millions,metrics-glossary#annual-recurring-revenue-arr
+logo_churn_ytd,2026-Q3,5.1,percent,metrics-glossary#churn
+headcount,2026-Q3,1204,people,

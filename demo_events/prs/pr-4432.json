@@ -1,0 +1,4 @@
+{"number": 4432, "repo": "northgate/platform", "author": "tom", "title": "PLAT-2210: SAML login redirect flow",
+ "head": "feature/plat-2210-saml-redirect", "base": "release/q1-2027", "ticket": "PLAT-2210", "reviewers": ["wei", "security"],
+ "labels": [], "files": ["identity/saml/redirect.py", "identity/saml/tests/test_redirect.py"], "deprecation_notice": false,
+ "body": "Implements the SAML redirect flow for Enterprise SSO.", "created": "2026-11-04T17:05"}

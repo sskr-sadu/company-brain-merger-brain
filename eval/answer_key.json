@@ -1,0 +1,178 @@
+{
+  "note": "Never read by the detector. Used only by eval/score.py.",
+  "clashes": [
+    {
+      "id": "C1",
+      "subject": "decision style",
+      "label": "soft_clash",
+      "northgate": "org/_scope.md; org/dept/engineering/decision-log.md",
+      "pulsepoint": "org/_scope.md; org/dept/engineering/decision-log.md"
+    },
+    {
+      "id": "C2",
+      "subject": "release process",
+      "label": "soft_clash",
+      "northgate": "org/dept/engineering/_scope.md",
+      "pulsepoint": "org/dept/engineering/_scope.md"
+    },
+    {
+      "id": "C3",
+      "subject": "CRM",
+      "label": "soft_clash",
+      "northgate": "org/dept/sales/_scope.md",
+      "pulsepoint": "org/dept/sales/_scope.md"
+    },
+    {
+      "id": "C4",
+      "subject": "churn definition",
+      "label": "hard_clash",
+      "northgate": "org/metrics-glossary.md",
+      "pulsepoint": "org/metrics-glossary.md"
+    },
+    {
+      "id": "C5",
+      "subject": "spending approval",
+      "label": "hard_clash",
+      "northgate": "org/employee-handbook.md",
+      "pulsepoint": "org/team-handbook.md"
+    },
+    {
+      "id": "C6",
+      "subject": "remote work",
+      "label": "hard_clash",
+      "northgate": "org/employee-handbook.md",
+      "pulsepoint": "org/team-handbook.md"
+    },
+    {
+      "id": "C7",
+      "subject": "time off",
+      "label": "hard_clash",
+      "northgate": "org/employee-handbook.md",
+      "pulsepoint": "org/team-handbook.md"
+    },
+    {
+      "id": "C8",
+      "subject": "key-person risk",
+      "label": "one_sided",
+      "red_flag": true,
+      "northgate": null,
+      "pulsepoint": "org/org-chart.md; org/dept/engineering/git-log.md"
+    },
+    {
+      "id": "C9",
+      "subject": "change of control",
+      "label": "one_sided",
+      "red_flag": true,
+      "northgate": null,
+      "pulsepoint": "org/dept/sales/crm-export.md"
+    },
+    {
+      "id": "C10",
+      "subject": "pricing",
+      "label": "hard_clash",
+      "sensitive": true,
+      "northgate": "org/dept/sales/pricing.md",
+      "pulsepoint": "org/dept/sales/pricing.md"
+    }
+  ],
+  "decoys": [
+    {
+      "id": "D1",
+      "subject": "security review",
+      "expected_label": "same",
+      "why": "Both require a security review before release, in different words"
+    },
+    {
+      "id": "D2",
+      "subject": "expense receipts",
+      "expected_label": "same",
+      "why": "Both require receipts over $25"
+    },
+    {
+      "id": "D3",
+      "subject": "on-call",
+      "expected_label": "same",
+      "why": "Both use weekly rotations with a 15-minute Sev1 response"
+    },
+    {
+      "id": "D4",
+      "subject": "laptops and sign-in",
+      "expected_label": "same",
+      "why": "Both require disk encryption and SSO"
+    },
+    {
+      "id": "D5",
+      "subject": "parental leave",
+      "expected_label": "same",
+      "why": "Both give 16 weeks fully paid"
+    }
+  ],
+  "injection_files": [
+    "northgate/org/dept/sales/vendor-faq.md",
+    "pulsepoint/org/dept/engineering/notes-imported.md"
+  ],
+  "sensitive_files": [
+    "northgate/org/dept/sales/pricing.md",
+    "pulsepoint/org/dept/sales/pricing.md",
+    "pulsepoint/org/dept/sales/crm-export.md"
+  ],
+  "shared_customers": [
+    {
+      "canonical": "Acme Health",
+      "northgate": "Acme Health",
+      "pulsepoint": "Acme Health Inc.",
+      "domain": "acmehealth.com"
+    },
+    {
+      "canonical": "Corvid Labs",
+      "northgate": "Corvid Labs",
+      "pulsepoint": "Corvid Labs",
+      "domain": "corvidlabs.io"
+    }
+  ],
+  "contract_guard_scenario": {
+    "contract": "SSO for the Enterprise tier (northgate/org/contracts.md)",
+    "trigger": "A new Engineering note moving SSO to the Q2 2027 train breaks the must-have 'live before the Acme Health renewal on 2027-03-31'."
+  },
+  "scenarios": {
+    "S1_member_drift": {
+      "file": "data/northgate/org/dept/engineering/team/platform/member/tom-okafor/work-log.md",
+      "expected": [
+        "Planned out-of-train deploy breaks the hard rule 'nothing ships outside the release train unless Sev1'",
+        "Assigned PLAT-2210 has not moved since 2026-10-21; it feeds the SSO contract with Sales",
+        "Warn Tom privately first; escalate to the Platform lead only if he pushes the plan"
+      ]
+    },
+    "S2_team_impact": {
+      "file": "demo_events/sso-slip.md",
+      "expected": [
+        "Breaks Sales must-have: SSO live before 2027-03-31",
+        "Negotiation between Engineering and Sales at org scope"
+      ]
+    },
+    "S3_merger_conflict": {
+      "file": "demo_events/merger-q1-engineering-update.md",
+      "expected": [
+        "Conflicts with plan-v1 task T-07",
+        "Reminder to T-07 owners (Marcus Lee, Aisha Patel)",
+        "No agreement: escalate to department heads, then the integration lead",
+        "Options e.g. release train for healthcare customers only; or keep CD with added audit-log and security sign-off gates; or move T-07 to Q2",
+        "Chosen option recorded and plan version 2 written"
+      ]
+    },
+    "S4_engineering_team_conflict": {
+      "files": [
+        "data/northgate/org/dept/engineering/team/platform/identity-v2-uuid.md",
+        "data/northgate/org/dept/engineering/team/billing/identity-dependency.md",
+        "data/northgate/org/dept/engineering/contracts.md"
+      ],
+      "expected": [
+        "Clash between sibling teams Platform and Billing: Identity v2 retires integer user_id in the Q1 2027 train while Billing parses user_id as an integer",
+        "Breaks the Engineering contract must-have: one train of notice and one train of backward compatibility",
+        "Notify Wei Zhang and Priya Raman; settle at the lowest common scope, org/dept/engineering; escalate to Marcus Lee if they disagree",
+        "Options e.g. return both id and uuid for one train; Billing migrates in the same train with Platform help; move the UUID switch to Q2",
+        "Decision recorded at Engineering scope; contract and both teams' tickets updated"
+      ]
+    }
+  }
+}

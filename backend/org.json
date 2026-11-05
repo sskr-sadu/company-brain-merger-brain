@@ -1,0 +1,27 @@
+{
+  "_note": "The company directory (what single sign-on groups would provide). Scope ids are short paths; 'dir' maps them to folders under data/northgate.",
+  "company": "northgate",
+  "today": "2026-11-04",
+  "scopes": {
+    "org":                  {"name": "Northgate",   "kind": "org",  "owner": "dana",   "dir": "org"},
+    "org/eng":              {"name": "Engineering", "kind": "dept", "owner": "marcus", "dir": "org/dept/engineering"},
+    "org/eng/platform":     {"name": "Platform",    "kind": "team", "owner": "wei",    "dir": "org/dept/engineering/team/platform", "poc": "wei"},
+    "org/eng/platform/tom": {"name": "Tom Okafor",  "kind": "member", "owner": "tom",  "dir": "org/dept/engineering/team/platform/member/tom-okafor"},
+    "org/eng/billing":      {"name": "Billing",     "kind": "team", "owner": "priya",  "dir": "org/dept/engineering/team/billing", "poc": "priya"},
+    "org/sales":            {"name": "Sales",       "kind": "dept", "owner": "elena",  "dir": "org/dept/sales"},
+    "org/sales/enterprise": {"name": "Enterprise",  "kind": "team", "owner": "sam",    "dir": "org/dept/sales/team/enterprise"},
+    "org/people":           {"name": "People",      "kind": "dept", "owner": "grace",  "dir": "org/dept/people"}
+  },
+  "people": {
+    "dana":   {"name": "Dana Whitfield", "role": "CEO",                   "home": "org",                  "access": "org",                  "email": "dana@northgate.example"},
+    "marcus": {"name": "Marcus Lee",     "role": "VP Engineering",        "home": "org/eng",              "access": "org/eng",              "email": "marcus@northgate.example"},
+    "wei":    {"name": "Wei Zhang",      "role": "Platform lead",         "home": "org/eng/platform",     "access": "org/eng/platform",     "email": "wei@northgate.example"},
+    "tom":    {"name": "Tom Okafor",     "role": "Engineer, Platform",    "home": "org/eng/platform",     "access": "org/eng/platform",     "member": true, "own": "org/eng/platform/tom", "email": "tom@northgate.example"},
+    "priya":  {"name": "Priya Raman",    "role": "Billing lead",          "home": "org/eng/billing",      "access": "org/eng/billing",      "email": "priya@northgate.example"},
+    "elena":  {"name": "Elena Ruiz",     "role": "VP Sales",              "home": "org/sales",            "access": "org/sales",            "email": "elena@northgate.example"},
+    "sam":    {"name": "Sam Chen",       "role": "Enterprise sales lead", "home": "org/sales/enterprise", "access": "org/sales/enterprise", "member": true, "email": "sam@northgate.example"},
+    "grace":  {"name": "Grace Kim",      "role": "VP People",             "home": "org/people",           "access": "org/people",           "email": "grace@northgate.example"}
+  },
+  "locked_access": ["dana", "grace"],
+  "capacity_hours_per_day": 6
+}
